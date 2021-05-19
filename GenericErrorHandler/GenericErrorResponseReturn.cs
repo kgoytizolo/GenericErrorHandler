@@ -12,6 +12,8 @@ namespace GenericErrorHandler
             ResponseItem = responseItem;
         }
 
+        public GenericErrorResponse() { }
+
         public override void ShowErrorMessageInConsole() {
             WriteLine($"Item to be returned: {ResponseItem.GetType()}");
             WriteLine($"Error Code: {_errorId}");

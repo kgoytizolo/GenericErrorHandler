@@ -10,6 +10,8 @@ namespace GenericErrorHandler
 
         public Error(int errCode = 0, string errMessage = "", string errTracking = "") => SetErrorInfo(errCode, errMessage, errTracking);
 
+        public Error() { }
+
         public int ErrorId { get => _errorId; set => _errorId = value; }     
         public string ErrorMessage { get => _errorMessage; set => _errorMessage = value; }  
         public string ErrorTracking { get => _errorTracking; set => _errorTracking = value; }
